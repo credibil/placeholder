@@ -1,0 +1,31 @@
+[workspace]
+members = [
+    "vc-holder",
+    "vc-issuer",
+    "vc-verifier",
+    "dwn-node",
+    "dwn-msg",
+]
+exclude = ["vercre-holder/examples/*"]
+resolver = "2"
+
+[workspace.package]
+authors = ["Credibil"]
+categories = ["authentication", "cryptography", "data-structures"]
+edition = "2024"
+exclude = [".*", "/docs", "snapshots/"]
+homepage = "https://vercre.io"
+keywords = ["credentials", "decentralized", "identity", "openid", "verifiable"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/vercre/placeholder"
+rust-version = "1.85"
+version = "0.1.0-alpha"
+
+
+
+[profile.release]
+# Optimize for small code size
+lto = true
+opt-level = "s"
+strip = true

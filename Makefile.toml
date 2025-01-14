@@ -1,0 +1,57 @@
+# Install: `cargo install cargo-make`
+# Help: https://sagiegurari.github.io/cargo-make/
+
+[env]
+CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = true
+
+[config]
+default_to_workspace = true
+skip_core_tasks = true
+skip_crate_env_info = true
+skip_git_env_info = true
+skip_rust_env_info = true
+
+[tasks.semver]
+command = "cargo"
+args = ["semver-checks"]
+install_crate = "cargo-semver-checks"
+
+[tasks.pre]
+run_task = { name = [
+    "pre-dwn-node",
+    "pre-dwn-msg",
+    "pre-vc-issuer",
+    "pre-vc-verifier",
+    "pre-vc-holder",
+], parallel = true }
+
+[tasks.pre-dwn-node]
+command = "cargo"
+args = ["publish", "--allow-dirty", "--dry-run", "--package", "dwn-node"]
+
+[tasks.pre-dwn-msg]
+command = "cargo"
+args = ["publish", "--allow-dirty", "--dry-run", "--package", "dwn-msg"]
+
+[tasks.pre-vc-issuer]
+command = "cargo"
+args = ["publish", "--allow-dirty", "--dry-run", "--package", "vc-issuer"]
+
+[tasks.pre-vc-verifier]
+command = "cargo"
+args = ["publish", "--allow-dirty", "--dry-run", "--package", "vc-verifier"]
+
+[tasks.pre-vc-holder]
+command = "cargo"
+args = ["publish", "--allow-dirty", "--dry-run", "--package", "vc-holder"]
+
+# args = release level: one of `release`, `major`, `minor`, `patch`, `alpha`, `beta`, `rc`
+[tasks.release]
+command = "cargo"
+args = ["release", "${@}"]
+install_crate = "cargo-release"
+
+[tasks.publish]
+command = "cargo"
+args = ["release", "${@}", "--execute"]
+install_crate = "cargo-release"
