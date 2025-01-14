@@ -1,11 +1,5 @@
 [workspace]
-members = [
-    "vc-holder",
-    "vc-issuer",
-    "vc-verifier",
-    "dwn-node",
-    "dwn-msg",
-]
+members = ["vc-holder", "vc-issuer", "vc-verifier", "dwn-node", "dwn-msg"]
 exclude = ["vercre-holder/examples/*"]
 resolver = "2"
 
@@ -21,8 +15,6 @@ readme = "README.md"
 repository = "https://github.com/vercre/placeholder"
 rust-version = "1.85"
 version = "0.1.0-alpha"
-
-
 
 [profile.release]
 # Optimize for small code size
