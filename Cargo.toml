@@ -1,5 +1,12 @@
 [workspace]
-members = ["vc-holder", "vc-issuer", "vc-verifier", "dwn-node", "dwn-msg"]
+members = [
+    "dwn-msg",
+    "dwn-node",
+    "dwn-types",
+    "vc-holder",
+    "vc-issuer",
+    "vc-verifier",
+]
 exclude = ["vercre-holder/examples/*"]
 resolver = "2"
 

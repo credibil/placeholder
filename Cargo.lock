@@ -11,6 +11,10 @@ name = "dwn-node"
 version = "0.1.0-alpha"
 
 [[package]]
+name = "dwn-types"
+version = "0.1.0-alpha"
+
+[[package]]
 name = "vc-holder"
 version = "0.1.0-alpha"
 
