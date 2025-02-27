@@ -1,11 +1,10 @@
 [workspace]
 members = [
-    "dwn-msg",
-    "dwn-node",
-    "dwn-types",
-    "vc-holder",
-    "vc-issuer",
-    "vc-verifier",
+    "dwn-rs",
+    "oid4vci-rs",
+    "oid4vp-rs",
+    "openid4vci-rs",
+    "openid4vp-rs",
 ]
 exclude = ["vercre-holder/examples/*"]
 resolver = "2"

@@ -1,5 +1,5 @@
 [package]
-name = "vc-verifier"
+name = "openid4vp-rs"
 description = "OpenID for Verifiable Presentations"
 license = "MIT OR Apache-2.0"
 readme = "README.md"

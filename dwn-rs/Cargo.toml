@@ -1,6 +1,6 @@
 [package]
-name = "vc-holder"
-description = "OpenID compliant Verifiable Credential holder API, typically implemented by a wallet"
+name = "dwn-rs"
+description = "Decentralized Web Node"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 authors.workspace = true

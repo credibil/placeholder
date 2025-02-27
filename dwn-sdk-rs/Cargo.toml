@@ -1,6 +1,6 @@
 [package]
-name = "dwn-msg"
-description = "Decentralized Web Node messages"
+name = "dwn-sdk-rs"
+description = "Decentralized Web Node SDK"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 authors.workspace = true

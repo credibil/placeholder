@@ -1,5 +1,5 @@
 [package]
-name = "vc-issuer"
+name = "oid4vci-rs"
 description = "OpenID for Verifiable Credential Issuance"
 license = "MIT OR Apache-2.0"
 readme = "README.md"

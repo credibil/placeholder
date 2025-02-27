@@ -3,25 +3,21 @@
 version = 4
 
 [[package]]
-name = "dwn-msg"
+name = "dwn-rs"
 version = "0.1.0-alpha"
 
 [[package]]
-name = "dwn-node"
+name = "oid4vci-rs"
 version = "0.1.0-alpha"
 
 [[package]]
-name = "dwn-types"
+name = "oid4vp-rs"
 version = "0.1.0-alpha"
 
 [[package]]
-name = "vc-holder"
+name = "openid4vci-rs"
 version = "0.1.0-alpha"
 
 [[package]]
-name = "vc-issuer"
-version = "0.1.0-alpha"
-
-[[package]]
-name = "vc-verifier"
+name = "openid4vp-rs"
 version = "0.1.0-alpha"
